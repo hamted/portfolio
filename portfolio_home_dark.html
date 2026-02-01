@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Portfolio - Dark Theme</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="portfolio_home_dark.css">
+        <script src="portfolio_home_dark.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Home</a>
+
+                <ul class="navbar-nav flex-row gap-4 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Habeebat Mas'ud _Resume.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+
+                    <a href= "portfolio_home_light.html"><button id="themeToggle" class="btn btn-outline-dark ms-3">☀️</button></a>
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="hero">
+            <h1>
+                Hey,<br>
+                I'm <strong><u>Habeebat</u>!</strong>
+            </h1>
+        </section>
+
+
+        <section id="about" class="split-section">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+
+                <!-- LEFT COLUMN -->
+                    <div class="col-md-6">
+                        <ul class="about-me">
+                            <li>I am in my 4th year student at the university of Ottawa, 
+                                studying Electrical Engineering and Computing Technology. 
+                                I chose my program in hopes of fulfilling my childhood dream of becoming a roboticist.
+                                I enjoy learning about new technologies and applying them to solve real-world problems.
+                                 </li>
+                            <li id="work_style">I enjoy doing hands on things which has led to me doing things like electronics, cooking and construction. 
+                               I would say that I enjoy working by myself but I can appreciate working in a group. My time in construction and in a restaurant have honed my communication and teamwork skills.
+                                Outside of work, I enjoy writing as well.  </li>
+                            <li>
+                                <div class="connect">
+                                    <span>Connect with me</span>
+                                        <a
+                                        href="http://www.linkedin.com/in/habeebat-mas-ud-a822a51b4"
+                                        target="_blank"
+                                        aria-label="LinkedIn profile"
+                                        >
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                </div>
+                            </li>
+                         </ul>
+                    </div>
+                <!-- RIGHT COLUMN -->
+                    <div class="col-md-6 text-center">
+                        <img 
+                        src="portrait.jpg" 
+                        alt="Portrait of Habeebat"
+                        class="about-image"
+                        >
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Some of my work</h2>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-6 col-md-3">
+                        <button class="work-card" data-bs-toggle="modal" data-bs-target="#workModal1">
+                            <img src="electronics.jpeg" alt="Case study 1 thumbnail" class="img-fluid rounded">
+                        </button>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-6 col-md-3">
+                        <button class="work-card" data-bs-toggle="modal" data-bs-target="#workModal2">
+                            <img src="construction.png" alt="Case study 2 thumbnail" class="img-fluid rounded">
+                        </button>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-6 col-md-3">
+                        <button class="work-card" data-bs-toggle="modal" data-bs-target="#workModal3">
+                            <img src="culinary.jpeg" alt="Case study 3 thumbnail" class="img-fluid rounded">
+                        </button>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-6 col-md-3">
+                        <button class="work-card" data-bs-toggle="modal" data-bs-target="#workModal4">
+                            <img src="poetry.jpeg" alt="Case study 4 thumbnail" class="img-fluid rounded">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="workModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content custom-modal">
+                    <div class="modal-body p-0">
+                        <img src="electronics.jpeg" alt="Case study 1" class="img-fluid">
+                    <div class="p-4">
+                        <h3 class="fw-bold mb-2">Electronics</h3>
+                        <p class="mb-0">
+                            This picture shows a simple electronics circuit I designed to simulate a traffic light system.
+                            I built this project to enhance my understanding of basic electronic components and circuit design.
+                            For this project, I used C on a QNX programmed Raspberry Pi to control the timing of the lights.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="workModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content custom-modal">
+                    <div class="modal-body p-0">
+                        <img src="construction.png" alt="Case study 2" class="img-fluid">
+                        <div class="p-4">
+                            <h3 class="fw-bold mb-2">Construction</h3>
+                            <p class="mb-0">
+                                This image showcases a community construction project I was involved in. 
+                                I volunteered with the Architecture Action Lab at Carleton University to help build Vanier's HUB.
+                                I contributed to various aspects of the build, including framing and finishing work.
+                                This experience allowed me to develop practical skills in construction and teamwork.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="workModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content custom-modal">
+                    <div class="modal-body p-0">
+                        <img src="culinary.jpeg" alt="Case study 3" class="img-fluid">
+                        <div class="p-4">
+                            <h3 class="fw-bold mb-2">Culinary</h3>
+                            <p class="mb-0">
+                                This image represents my passion for culinary arts, particularly in baking.
+                                I have experience working in a restaurant kitchen, where I honed my skills in food preparation and presentation.
+                                Baking requires precision and creativity, and I enjoy experimenting with new recipes and techniques to create delicious treats.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="workModal4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content custom-modal">
+                    <div class="modal-body p-0">
+                        <img src="poetry.jpeg" alt="Case study 4" class="img-fluid">
+                        <div class="p-4">
+                            <h3 class="fw-bold mb-2">Poetry</h3>
+                            <p class="mb-0">
+                                This image represents my passion for poetry. I enjoy expressing my thoughts and emotions through creative writing.
+                                Through poetry, I explore various themes and styles, allowing me to connect with others on a deeper level.
+                                This creative outlet has helped me develop my communication skills and appreciate the power of words.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
